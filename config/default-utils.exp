@@ -14,6 +14,24 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA 02110-1301, USA.  
 
-load_lib default-binutils.exp
-load_lib default-utils.exp
+global SED 
+if ![info exists SED] then {
+    set SED "sed"
+}
 
+global GREP
+if ![info exists GREP] then {
+    set GREP "grep"
+}
+
+global COPY
+if ![info exists COPY] then {
+    set COPY "cp"
+}
+
+global REMOVE
+if ![info exists REMOVE] then {
+    set REMOVE "rm"
+}
+
+utils_init

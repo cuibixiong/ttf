@@ -1,0 +1,3 @@
+load_generic_config "unix"
+set_board_info compiler "[find_gcc]"
+
